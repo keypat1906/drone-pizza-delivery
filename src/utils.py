@@ -57,7 +57,7 @@ def validate_token(token):
     function validate the token signature, iss and expiration
     '''
     try:
-        decoded = jwt.decode(token, "admin@jbtc.com", algorithms="HS256")
+        decoded = jwt.decode(token, "admin@arc.com", algorithms="HS256")
     
     except jwt.ExpiredSignatureError as e :
         return (None, jsonify({"success": False,"info":f"Expired Signature - {e} Authenticate again"}))
