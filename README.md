@@ -60,7 +60,7 @@ This return the path the drone should take to deliver
 ]
 
 
-2.  This endpoint provides the authenticate functionality. Currently only user "admin@jbtc.com" is used for authentication.
+2.  This endpoint provides the authenticate functionality. Currently only user "admin@arc.com" is used for authentication.
 This endpoint will return the jwt token which is valid for 1 hour. 
  
 POST {{server}}/authenticate
